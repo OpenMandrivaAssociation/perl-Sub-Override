@@ -1,7 +1,7 @@
 %define module	Sub-Override
 %define name	perl-%{module}
 %define version	0.08
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -26,6 +26,8 @@ subroutine to replace and to supply a sub to replace it with.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
+
+%check
 make test
 
 %install
