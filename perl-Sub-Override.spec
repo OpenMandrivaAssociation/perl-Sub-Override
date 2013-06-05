@@ -2,14 +2,14 @@
 %define upstream_version 0.08
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.09
+Release:	1
 
 Summary:	Perl extension for easily overriding subroutines
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/O/OV/OVID/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/O/OV/OVID/Sub-Override-0.09.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::Exception)
@@ -71,4 +71,5 @@ make test
 
 * Tue Jan 11 2005 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.06-1mdk
 - Initial MDK release.
+
 
