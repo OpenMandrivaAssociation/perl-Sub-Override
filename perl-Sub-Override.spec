@@ -7,7 +7,7 @@ Release:	3
 Summary:	Perl extension for easily overriding subroutines
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/O/OV/OVID/Sub-Override-0.09.tar.gz
 
 BuildRequires:	perl-devel
