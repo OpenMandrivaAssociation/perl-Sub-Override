@@ -1,8 +1,7 @@
 %define upstream_name	 Sub-Override
-%define upstream_version 0.12
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.12
+Release:	2
 
 Summary:	Perl extension for easily overriding subroutines
 License:	GPL+ or Artistic
@@ -21,7 +20,7 @@ Sub::Override is a perl module that allows the programmer to simply name a
 subroutine to replace and to supply a sub to replace it with.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -42,9 +41,7 @@ make test
 %changelog
 * Wed Jul 29 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.80.0-1mdv2010.0
 + Revision: 404422
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.08-6mdv2009.0
+- rebuild using %0.12 Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.08-6mdv2009.0
 + Revision: 258393
 - rebuild
 
